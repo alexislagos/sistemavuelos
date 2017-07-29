@@ -1,0 +1,6 @@
+/sistemavuelos-web/target/
+/sistemavuelos-ejb/target/
+/sistemavuelos-ear/target/
+sistemavuelos-ear/nb-configuration.xml
+sistemavuelos-ejb/nb-configuration.xml
+sistemavuelos-web/nb-configuration.xml
