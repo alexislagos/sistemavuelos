@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-    <artifactId>sistemavuelos</artifactId>
-    <groupId>sistemavuelos</groupId>
-    <version>0</version>
-  </parent>
+        <artifactId>sistemavuelos</artifactId>
+        <groupId>sistemavuelos</groupId>
+        <version>1</version>
+    </parent>
 
     <groupId>sistemavuelos</groupId>
     <artifactId>sistemavuelos-ear</artifactId>
-    <version>0</version>
+    <version>1</version>
     <packaging>ear</packaging>
 
     <name>sistemavuelos-ear</name>
@@ -36,6 +36,17 @@
                 <configuration>
                     <version>6</version>
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <modules>
+                        <webModule>
+                            <groupId>sistemavuelos</groupId>
+                            <artifactId>sistemavuelos-web</artifactId>
+                            <contextRoot>/sistemavuelos</contextRoot>
+                        </webModule>
+                        <ejbModule>
+                            <groupId>sistemavuelos</groupId>
+                            <artifactId>sistemavuelos-ejb</artifactId>
+                        </ejbModule>
+                    </modules>
                 </configuration>
             </plugin>
         </plugins>
@@ -44,13 +55,13 @@
         <dependency>
             <groupId>sistemavuelos</groupId>
             <artifactId>sistemavuelos-ejb</artifactId>
-            <version>0</version>
+            <version>1</version>
             <type>ejb</type>
         </dependency>
         <dependency>
             <groupId>sistemavuelos</groupId>
             <artifactId>sistemavuelos-web</artifactId>
-            <version>0</version>
+            <version>1</version>
             <type>war</type>
         </dependency>
     </dependencies>
