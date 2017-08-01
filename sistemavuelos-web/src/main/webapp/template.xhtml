@@ -6,22 +6,28 @@
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <h:outputStylesheet name="./css/default.css"/>
-        <h:outputStylesheet name="./css/cssLayout.css"/>
+        <!--        <h:outputStylesheet name="css/cssLayout.css"/>
+                <h:outputStylesheet name="css/default.css"/>-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
         <title>Sistema Vuelos</title>
     </h:head>
-    
+
     <h:body>
-        <div id="top" class="top">
-            <ui:insert name="top">Top</ui:insert>
+
+        <div id="top">
+            <ui:insert name="top">
+                <h2>Sistema de Vuelos</h2>
+            </ui:insert>
         </div>
-        <div>
-            <div id="left">
-                <ui:insert name="left">Left</ui:insert>
-            </div>
-            <div id="content" class="left_content">
-                <ui:insert name="content">Content</ui:insert>
-            </div>
+
+        <div id="content" class="center_content">
+            <ui:insert name="content">Content</ui:insert>
         </div>
+
+        <div id="bottom">
+            <ui:insert name="bottom">Footer</ui:insert>
+        </div>
+
     </h:body>
+
 </html>
